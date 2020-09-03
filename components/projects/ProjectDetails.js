@@ -2,6 +2,7 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkIcon from '@material-ui/icons/Link';
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 
@@ -10,7 +11,7 @@ const useStyles = makeStyles(() => ({
         flexGrow: 1,
     },
     title: {
-        marginTop: '1em'
+        marginTop: '1em',
     },
     subTitle: {
         marginRight: '0.5em'
@@ -18,11 +19,11 @@ const useStyles = makeStyles(() => ({
     detail: {
         display: 'flex',
         alignItems: 'baseline',
-        marginRight: '1em'
+        marginRight: '1em',
     }
 }));
 
-function ProjectDetails({context, team, sources}){
+function ProjectDetails({context, team, sources, link}){
     const classes = useStyles();
 
     return(
@@ -32,7 +33,7 @@ function ProjectDetails({context, team, sources}){
             </Typography>
 
             <div className={classes.grid}>
-                <Grid container justify={"left"} spacing={2}>
+                <Grid container spacing={2}>
                     {context &&
                     <Grid item className={classes.detail}>
                         <Typography className={classes.subTitle} variant="h6" color="textSecondary" component="p">
@@ -64,6 +65,20 @@ function ProjectDetails({context, team, sources}){
                             target={"_blank"}
                         >
                             Sources
+                        </Button>
+                    </Grid>
+                    }
+                    {link &&
+                    <Grid item className={classes.detail}>
+                        <Button
+                            startIcon={<LinkIcon/>}
+                            variant={"contained"}
+                            color={"primary"}
+                            size={"small"}
+                            href={link}
+                            target={"_blank"}
+                        >
+                            Résultat
                         </Button>
                     </Grid>
                     }

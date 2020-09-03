@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import {ThemeContext} from "./_app";
 import Container from "@material-ui/core/Container";
 import Project from "../components/projects/Project";
-import {projectPortfolioDescription} from "../utils/string";
+import {projectClicetcopieDescription, projectOthelloDescription, projectPortfolioDescription} from "../utils/string";
 import Chip from "@material-ui/core/Chip";
 import Avatar from "@material-ui/core/Avatar";
 import LanguageIcon from "@material-ui/icons/Language";
@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(1),
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(1)
+    },
+    avatar: {
+        backgroundColor: "white !important"
     }
 }));
 
@@ -51,12 +54,39 @@ export default function Web(){
                     image={"../portfolio-img.jpg"}
                     imageSubtitle={"Accueil du portfolio"}>
                     <ProjectDescription>{projectPortfolioDescription}</ProjectDescription>
-                    <ProjectDetails context={"Personnel"} team={1} sources={"http://github.com/Pierre-Giraud"}/>
+                    <ProjectDetails context={"Personnel"} team={1} sources={"http://github.com/Pierre-Giraud/portfolio"}/>
                     <ProjectTools>
-                        <Chip className={classes.tools} color="primary" label={"React JS"} avatar={<Avatar src="../react-icon.svg" />} />
-                        <Chip className={classes.tools} color="primary" label={"Next JS"} avatar={<Avatar src="../nextjs-logo.png" />} />
-                        <Chip className={classes.tools} color="primary" label={"Material UI"} avatar={<Avatar src="../material-ui-logo.png" />} />
-                        <Chip className={classes.tools} color="primary" label={"Netlify"} avatar={<Avatar src="../netlify-logo.png" />} />
+                        <Chip className={classes.tools} color="primary" label={"React JS"} avatar={<Avatar className={classes.avatar} src="../react-icon.svg" />} />
+                        <Chip className={classes.tools} color="primary" label={"Next JS"} avatar={<Avatar className={classes.avatar} src="../nextjs-logo.png" />} />
+                        <Chip className={classes.tools} color="primary" label={"Material UI"} avatar={<Avatar className={classes.avatar} src="../material-ui-logo.png" />} />
+                        <Chip className={classes.tools} color="primary" label={"Netlify"} avatar={<Avatar className={classes.avatar} src="../netlify-logo.png" />} />
+                    </ProjectTools>
+                </Project>
+
+                <Project
+                    name={"Othello"}
+                    subheader={"Mai 2020"}
+                    image={"../othello-game.jpg"}
+                    imageSubtitle={"Ecran de jeu"}>
+                    <ProjectDescription>{projectOthelloDescription}</ProjectDescription>
+                    <ProjectDetails context={"Études"} team={1} sources={"http://github.com/Pierre-Giraud/othello"}/>
+                    <ProjectTools>
+                        <Chip className={classes.tools} color="primary" label={"HTML"} />
+                        <Chip className={classes.tools} color="primary" label={"SCSS"} />
+                        <Chip className={classes.tools} color="primary" label={"jQuery"} avatar={<Avatar className={classes.avatar} src="../jquery-logo.png" />} />
+                    </ProjectTools>
+                </Project>
+
+                <Project
+                    name={"Clic & Copie"}
+                    subheader={"Avril 2019 - Mai 2019"}
+                    image={"../clicetcopie-accueil.jpg"}
+                    imageSubtitle={"Accueil du site"}>
+                    <ProjectDescription>{projectClicetcopieDescription}</ProjectDescription>
+                    <ProjectDetails context={"Études (stage)"} team={1} link={"https://www.clicetcopie.fr/"}/>
+                    <ProjectTools>
+                        <Chip className={classes.tools} color="primary" label={"WordPress"} avatar={<Avatar className={classes.avatar} src="../wordpress-logo.png" />} />
+                        <Chip className={classes.tools} color="primary" label={"Bulma"} avatar={<Avatar className={classes.avatar} src="../bulma-logo.png" />} />
                     </ProjectTools>
                 </Project>
             </Container>

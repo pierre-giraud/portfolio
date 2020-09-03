@@ -13,12 +13,20 @@ import ProjectDetails from "./ProjectDetails";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: theme.spacing(2)
+        marginBottom: theme.spacing(5),
+        [theme.breakpoints.up('md')]: {
+            padding: theme.spacing(2)
+        },
     },
     media: {
-        height: 0,
         width: '100%',
         paddingTop: '49%', // 16:9
+        marginTop: '6%',
+        marginRight: theme.spacing(2),
+        backgroundSize: 'contain !important'
+    },
+    otherFormat: {
+        paddingTop: '33%'
     },
     grid: {
         flexGrow: 1,
@@ -32,13 +40,17 @@ const useStyles = makeStyles((theme) => ({
     image: {
         paddingTop: '49%',
         width: '100%',
-        height: 0,
         marginTop: '6%',
         marginRight: theme.spacing(2),
+        backgroundSize: 'contain !important'
     },
+    imageSubTitleMobile: {
+        paddingBottom: theme.spacing(3),
+        textAlign: "center"
+    }
 }));
 
-function Project({children, name, subheader, image, imageSubtitle}){
+function Project({children, name, subheader, image, imageSubtitle, defaultImageFormat = true}){
     const classes = useStyles();
     const project = getProject();
 
@@ -67,13 +79,13 @@ function Project({children, name, subheader, image, imageSubtitle}){
 
     return (
         <>
-            <Hidden mdUp implementation={"css"}>
-                <Card>
+            <Hidden mdUp>
+                <Card className={classes.root}>
                     {name && <CardHeader title={name} subheader={subheader}/>}
                     <CardMedia className={classes.media} image={image} title={imageSubtitle}/>
                     <CardContent>
-                        <Typography gutterBottom variant="h4" component="h2">
-                            {name}
+                        <Typography className={classes.imageSubTitleMobile} variant="body2" color="textSecondary" component="p">
+                            {imageSubtitle}
                         </Typography>
                         {project.data.description}
                         {project.data.details}
@@ -82,7 +94,7 @@ function Project({children, name, subheader, image, imageSubtitle}){
                 </Card>
             </Hidden>
 
-            <Hidden smDown implementation={"css"}>
+            <Hidden smDown>
                 <Card className={classes.root}>
                     <div className={classes.grid}>
                         <Grid container justify={"center"} spacing={2}>
@@ -95,7 +107,10 @@ function Project({children, name, subheader, image, imageSubtitle}){
                                 </CardContent>
                             </Grid>
                             <Grid item sm={6} className={classes.gridRight}>
-                                <CardMedia className={classes.image} image={image} title={imageSubtitle}/>
+                                <CardMedia
+                                    className={defaultImageFormat ? classes.media : classes.media + " " + classes.otherFormat}
+                                    image={image}
+                                    title={imageSubtitle}/>
                                 <CardContent>
                                     <Typography gutterBottom variant="body2" color="textSecondary" component="p">
                                         {imageSubtitle}
