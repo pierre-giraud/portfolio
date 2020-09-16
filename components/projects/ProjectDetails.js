@@ -2,7 +2,7 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkIcon from '@material-ui/icons/Link';
+import LanguageIcon from '@material-ui/icons/Language';
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 
@@ -71,14 +71,14 @@ function ProjectDetails({context, team, sources, link}){
                     {link &&
                     <Grid item className={classes.detail}>
                         <Button
-                            startIcon={<LinkIcon/>}
+                            startIcon={<LanguageIcon/>}
                             variant={"contained"}
                             color={"primary"}
                             size={"small"}
                             href={link}
                             target={"_blank"}
                         >
-                            Résultat
+                            Vers le site
                         </Button>
                     </Grid>
                     }
