@@ -5,7 +5,12 @@ import Typography from "@material-ui/core/Typography";
 import {ThemeContext} from "./_app";
 import Container from "@material-ui/core/Container";
 import Project from "../components/projects/Project";
-import {projectClicetcopieDescription, projectOthelloDescription, projectPortfolioDescription} from "../utils/string";
+import {
+    projectClicetcopieDescription,
+    projectOthelloDescription,
+    projectPortfolioDescription,
+    projectQuizDescription
+} from "../utils/string";
 import Chip from "@material-ui/core/Chip";
 import Avatar from "@material-ui/core/Avatar";
 import LanguageIcon from "@material-ui/icons/Language";
@@ -74,6 +79,22 @@ export default function Web(){
                         <Chip className={classes.tools} color="primary" label={"HTML"} />
                         <Chip className={classes.tools} color="primary" label={"SCSS"} />
                         <Chip className={classes.tools} color="primary" label={"jQuery"} avatar={<Avatar className={classes.avatar} src="../jquery-logo.png" />} />
+                    </ProjectTools>
+                </Project>
+
+                <Project
+                    name={"Quiz"}
+                    subheader={"Décembre 2020"}
+                    image={"../quiz-accueil.jpg"}
+                    imageSubtitle={"Page de profil administrateur"}>
+                    <ProjectDescription>{projectQuizDescription}</ProjectDescription>
+                    <ProjectDetails context={"Études"} team={2} sources={"http://github.com/Pierre-Giraud/quiz"}/>
+                    <ProjectTools>
+                        <Chip className={classes.tools} color="primary" label={"HTML"} />
+                        <Chip className={classes.tools} color="primary" label={"SCSS"} />
+                        <Chip className={classes.tools} color="primary" label={"PHP"} />
+                        <Chip className={classes.tools} color="primary" label={"jQuery"} avatar={<Avatar className={classes.avatar} src="../jquery-logo.png" />} />
+                        <Chip className={classes.tools} color="primary" label={"Bulma"} avatar={<Avatar className={classes.avatar} src="../bulma-logo.png" />} />
                     </ProjectTools>
                 </Project>
 

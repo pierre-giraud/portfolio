@@ -38,6 +38,11 @@ export const projectDjubakaDescription = "Ce projet a pour objectif la création
     "Divisé en trois programmes, le premier est un éditeur de playlists et les deux autres des lecteurs en mode console et " +
     "interface utilisateur.";
 
+export const projectQuizDescription = "Une application web permettant à des utilisateurs inscrits de créer, modifier, " +
+    "supprimer et publier des quiz où l'administrateur du site peut également supprimer des utilisateurs. Réalisée avec PHP," +
+    " le but était de développer l'entièreté de la gestion des utilisateurs, des quiz et des pages personnalisées à chaque" +
+    " utilisateur.";
+
 /*
 PARTIE PRESENTATION
 ----------------
@@ -45,7 +50,7 @@ PARTIE PROJETS
 1 rubrique par type (web, logiciel)
 WEB
  - Ce site
- - CRBM
+ - CRBM (non)
  - Clic & Copie
  - Quiz
  - Othello avec IA
@@ -58,4 +63,5 @@ LOGICIEL
 
 AUTRES
  - Service REST Spring
+ - Bac à sable
  */

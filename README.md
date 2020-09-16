@@ -11,7 +11,7 @@ Vous pouvez y accéder en cliquant [ici](https://pierregiraud.netlify.app/).
 
 Ce projet a été réalisé avec [Next.js](https://nextjs.org/) et démaré avec [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-L'interface utilisateur a été réalisé à l'aide de la bibliothèque de composants [Material-UI](https://material-ui.com/).
+L'interface utilisateur a été réalisée à l'aide de la bibliothèque de composants [Material-UI](https://material-ui.com/).
 
 ## Déploiement
 

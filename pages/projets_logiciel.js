@@ -52,7 +52,7 @@ export default function Logiciel(){
                     name={"Djubaka"}
                     subheader={"Avril 2020 - Mai 2020"}
                     image={"../djubaka-lecteur.jpg"}
-                    imageSubtitle={"Lecteur de playlist"}
+                    imageSubtitle={"Interface utilisateur du lecteur de playlist"}
                     defaultImageFormat={false}>
                     <ProjectDescription>{projectDjubakaDescription}</ProjectDescription>
                     <ProjectDetails context={"Études"} team={1} sources={"http://github.com/Pierre-Giraud/djubaka"}/>
