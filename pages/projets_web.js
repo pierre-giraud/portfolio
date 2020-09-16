@@ -72,7 +72,7 @@ export default function Web(){
                     name={"Othello"}
                     subheader={"Mai 2020"}
                     image={"../othello-game.jpg"}
-                    imageSubtitle={"Ecran de jeu"}>
+                    imageSubtitle={"Écran de jeu"}>
                     <ProjectDescription>{projectOthelloDescription}</ProjectDescription>
                     <ProjectDetails context={"Études"} team={1} sources={"http://github.com/Pierre-Giraud/othello"}/>
                     <ProjectTools>

@@ -7,7 +7,7 @@ import LanguageIcon from "@material-ui/icons/Language";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import ProjectDescription from "../components/projects/ProjectDescription";
-import {projectDjubakaDescription} from "../utils/string";
+import {projectDjubakaDescription, projectSolitaireChessDescription} from "../utils/string";
 import ProjectDetails from "../components/projects/ProjectDetails";
 import ProjectTools from "../components/projects/ProjectTools";
 import Chip from "@material-ui/core/Chip";
@@ -56,6 +56,18 @@ export default function Logiciel(){
                     defaultImageFormat={false}>
                     <ProjectDescription>{projectDjubakaDescription}</ProjectDescription>
                     <ProjectDetails context={"Études"} team={1} sources={"http://github.com/Pierre-Giraud/djubaka"}/>
+                    <ProjectTools>
+                        <Chip className={classes.tools} color="primary" label={"Java"} />
+                    </ProjectTools>
+                </Project>
+
+                <Project
+                    name={"Solitaire Chess"}
+                    subheader={"Juin 2016"}
+                    image={"../solitaireChess-plateau.png"}
+                    imageSubtitle={"Écran de jeu au niveau 1"}>
+                    <ProjectDescription>{projectSolitaireChessDescription}</ProjectDescription>
+                    <ProjectDetails context={"Études"} team={3}/>
                     <ProjectTools>
                         <Chip className={classes.tools} color="primary" label={"Java"} />
                     </ProjectTools>
