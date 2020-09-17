@@ -16,6 +16,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import ComputerIcon from '@material-ui/icons/Computer';
 import LanguageIcon from '@material-ui/icons/Language';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import SendIcon from '@material-ui/icons/Send';
 import Button from "@material-ui/core/Button";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
@@ -132,6 +133,17 @@ function ResponsiveDrawer({selectedItem}) {
                     </ListItem>
                 </Link>
             </List>
+            <Divider />
+            <Link href={'/contact'}>
+                <ListItem
+                    button
+                    selected={selectedIndex === 4}>
+                    <ListItemIcon>
+                        <SendIcon/>
+                    </ListItemIcon>
+                    <ListItemText primary="Contact" />
+                </ListItem>
+            </Link>
             <Divider />
             <div className={classes.centered}>
                 <ThemeTypeSwitcher/>
