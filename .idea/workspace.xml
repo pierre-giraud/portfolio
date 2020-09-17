@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bf452f1-7e24-4057-987a-6324ec2d706a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ResponsiveDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ResponsiveDrawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <workItem from="1600275428914" duration="4774000" />
       <workItem from="1600283928620" duration="2787000" />
       <workItem from="1600309344867" duration="8365000" />
-      <workItem from="1600351510066" duration="7037000" />
+      <workItem from="1600351510066" duration="7563000" />
     </task>
     <servers />
   </component>
