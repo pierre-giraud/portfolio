@@ -3,7 +3,7 @@ import WelcomeComponent from "../components/WelcomeComponent";
 import IntroComponent from "../components/IntroComponent";
 import {getTheme} from "../utils/theme";
 import {ThemeContext} from "./_app";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 export default function Home() {
   const [themeObject] = useContext(ThemeContext);

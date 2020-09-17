@@ -9,6 +9,7 @@ import {loremipsum, otherProjectsIntro, softwareDvptIntro, webDvptIntro} from ".
 const useStyles = makeStyles((theme) => ({
     root: {
         paddingTop: theme.spacing(12),
+        paddingBottom: theme.spacing(5)
     },
     grid: {
         flexGrow: 1,

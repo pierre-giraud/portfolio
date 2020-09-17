@@ -82,11 +82,11 @@ function Project({children, name, subheader, image, imageSubtitle, defaultImageF
             <Hidden mdUp>
                 <Card className={classes.root}>
                     {name && <CardHeader title={name} subheader={subheader}/>}
-                    <CardMedia className={classes.media} image={image} title={imageSubtitle}/>
+                    {image && <CardMedia className={classes.media} image={image} title={imageSubtitle}/>}
                     <CardContent>
-                        <Typography className={classes.imageSubTitleMobile} variant="body2" color="textSecondary" component="p">
+                        { image && <Typography className={classes.imageSubTitleMobile} variant="body2" color="textSecondary" component="p">
                             {imageSubtitle}
-                        </Typography>
+                        </Typography>}
                         {project.data.description}
                         {project.data.details}
                         {project.data.tools}
@@ -98,7 +98,7 @@ function Project({children, name, subheader, image, imageSubtitle, defaultImageF
                 <Card className={classes.root}>
                     <div className={classes.grid}>
                         <Grid container justify={"center"} spacing={2}>
-                            <Grid item sm={6}>
+                            <Grid item sm={image ? 6 : 12}>
                                 {name && <CardHeader title={name} subheader={subheader}/>}
                                 <CardContent>
                                     {project.data.description}
@@ -106,7 +106,7 @@ function Project({children, name, subheader, image, imageSubtitle, defaultImageF
                                     {project.data.tools}
                                 </CardContent>
                             </Grid>
-                            <Grid item sm={6} className={classes.gridRight}>
+                            {image && <Grid item sm={6} className={classes.gridRight}>
                                 <CardMedia
                                     className={defaultImageFormat ? classes.media : classes.media + " " + classes.otherFormat}
                                     image={image}
@@ -116,7 +116,7 @@ function Project({children, name, subheader, image, imageSubtitle, defaultImageF
                                         {imageSubtitle}
                                     </Typography>
                                 </CardContent>
-                            </Grid>
+                            </Grid>}
                         </Grid>
                     </div>
                 </Card>

@@ -15,15 +15,15 @@ export const webDvptIntro = "Domaine me tenant le plus à coeur, vous trouverez 
 export const softwareDvptIntro = "Tenant une place importante durant mon cursus, ce domaine m'a apporté de nombreuses" +
     " compétences en programmation orientée objet, notamment en Java et Python, ainsi que du développement respectant les" +
     " principes des design patterns. J'ai eu l'occasion de participer à des projets visant à concevoir et à réaliser des" +
-    " mini-applications afin d'appliquer ces connaissances. ";
+    " mini-applications afin d'appliquer ces connaissances.";
 
 export const otherProjectsIntro = "Cette rubrique contient des projets annexes ayant également été réalisé durant mes" +
     " années d'études et comportants des aspects intéressants.";
 
 
-export const projectPortfolioDescription = "Vous vous y trouvez actuellement : un portfolio" +
-    " me permettant de mettre en avant mes projets réalisés. Il fallait réaliser un site soigné, possédant plusieurs pages" +
-    " et avec l'objectif d'utiliser un des framework JavaScript les plus utilisés.";
+export const projectPortfolioDescription = "Vous vous y trouvez actuellement : une première version de mon portfolio" +
+    " me permettant de mettre en avant mes projets réalisés. Je souhaitait un site simple, clair, possédant plusieurs pages" +
+    " et avec l'objectif d'utiliser React, un des frameworks JavaScript les plus utilisés sur le marché.";
 
 export const projectOthelloDescription = "Une application web permettant de jouer au " +
     "jeu Othello avec des intelligences artificielles en se concentrant sur des algorithmes de recherche de stratégie gagnante " +
@@ -47,6 +47,9 @@ export const projectDjubakaDescription = "Ce projet a pour objectif la création
 export const projectSolitaireChessDescription = "Reprenant les règles de déplacement des échecs, le Solitaire Chess se joue seul à travers " +
     "une soixantaine de défis de difficulté croissante où le but est d'éliminer toutes les pièce du plateau afin de n'en laisser" +
     " qu'une.";
+
+export const projectSTBServerDescription = "Service REST permettant de récupérer des informations relatives à des STB (" +
+    "Spécification Technique des Besoins) réalisé en JAVA avec le framework Spring.";
 
 /*
 PARTIE PRESENTATION

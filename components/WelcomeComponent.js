@@ -5,7 +5,6 @@ import {makeStyles, useTheme} from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import {welcomeText1} from "../utils/string";
 import Typography from "@material-ui/core/Typography";
-import ScrollingArrow from "./ScrollingArrow";
 
 const useStyles = makeStyles((theme) => ({
     main: {
@@ -51,6 +50,15 @@ const useStyles = makeStyles((theme) => ({
         },
     }
 }));
+
+function ScrollingArrow(){
+    return (
+        <a className={"arrow"} href={"#intro"}>
+            <div className={"arrow-left"}/>
+            <div className={"arrow-right"}/>
+        </a>
+    )
+}
 
 function WelcomeComponent(){
     const classes = useStyles();

@@ -14,7 +14,7 @@ import {
 import Chip from "@material-ui/core/Chip";
 import Avatar from "@material-ui/core/Avatar";
 import LanguageIcon from "@material-ui/icons/Language";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import ProjectDescription from "../components/projects/ProjectDescription";
 import ProjectTools from "../components/projects/ProjectTools";
 import ProjectDetails from "../components/projects/ProjectDetails";
@@ -55,7 +55,7 @@ export default function Web(){
 
                 <Project
                     name={"Mon Portfolio"}
-                    subheader={"Août 2020"}
+                    subheader={"Août 2020 - Septembre 2020"}
                     image={"../portfolio-img.jpg"}
                     imageSubtitle={"Accueil du portfolio"}>
                     <ProjectDescription>{projectPortfolioDescription}</ProjectDescription>

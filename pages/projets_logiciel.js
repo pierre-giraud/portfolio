@@ -2,8 +2,8 @@ import {makeStyles} from "@material-ui/core/styles";
 import React, {useContext} from "react";
 import {ThemeContext} from "./_app";
 import {getTheme} from "../utils/theme";
-import Layout from "../components/layout";
-import LanguageIcon from "@material-ui/icons/Language";
+import Layout from "../components/Layout";
+import ComputerIcon from '@material-ui/icons/Computer';
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import ProjectDescription from "../components/projects/ProjectDescription";
@@ -11,7 +11,6 @@ import {projectDjubakaDescription, projectSolitaireChessDescription} from "../ut
 import ProjectDetails from "../components/projects/ProjectDetails";
 import ProjectTools from "../components/projects/ProjectTools";
 import Chip from "@material-ui/core/Chip";
-import Avatar from "@material-ui/core/Avatar";
 import Project from "../components/projects/Project";
 
 const useStyles = makeStyles((theme) => ({
@@ -44,7 +43,7 @@ export default function Logiciel(){
         <Layout theme={theme} title={"Pierre Giraud - Projets Logiciel"} page={2}>
             <Container>
                 <div className={classes.pageTitle}>
-                    <LanguageIcon className={classes.icon}/>
+                    <ComputerIcon className={classes.icon}/>
                     <Typography variant={"h1"}>Projets Logiciel</Typography>
                 </div>
 
