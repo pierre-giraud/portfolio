@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import React, {useContext} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {ThemeContext} from "./_app";
 import {getTheme} from "../utils/theme";
 import Container from "@material-ui/core/Container";
@@ -35,6 +35,13 @@ export default function Contact(){
     const classes = useStyles();
     const [themeObject] = useContext(ThemeContext);
     const theme = getTheme(themeObject);
+    const [success, setSuccess] = useState(false);
+
+    useEffect(() => {
+        if ( window.location.search.includes('success=true') ) {
+            setSuccess(true);
+        }
+    }, []);
 
     return (
         <Layout theme={theme} title={"Pierre Giraud - Contact"} page={4}>
@@ -43,7 +50,13 @@ export default function Contact(){
                     <Typography component="h2" variant="h1">
                         Contact
                     </Typography>
-                    <form className={classes.form} name="contact" action="/contact" method="POST" data-netlify="true">
+                    {success && (
+                        <p style={{ color: 'green'}}>
+                            Successfully submitted form!
+                        </p>
+                    )}
+                    <form className={classes.form} action="/contact?success=true" name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
                         <Grid container spacing={2}>
                             <Grid item xs={12} sm={6}>
                                 <TextField
