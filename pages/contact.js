@@ -43,7 +43,7 @@ export default function Contact(){
                     <Typography component="h2" variant="h1">
                         Contact
                     </Typography>
-                    <form className={classes.form} name={"contact"} action={"POST"} data-netlify={"true"}>
+                    <form className={classes.form} name="contact" action="/contact" method="POST" data-netlify="true">
                         <Grid container spacing={2}>
                             <Grid item xs={12} sm={6}>
                                 <TextField
