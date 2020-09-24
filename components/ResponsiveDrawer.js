@@ -174,7 +174,8 @@ function ResponsiveDrawer({selectedItem}) {
                             startIcon={<AttachFileIcon/>}
                             variant={"contained"}
                             color={"secondary"}
-                            href={"#"}
+                            href={"../CV-Pierre-Giraud.pdf"}
+                            target={"_blank"}
                             className={classes.appBarButton}
                         >
                             Mon CV

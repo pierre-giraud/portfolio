@@ -48,6 +48,11 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             paddingTop: theme.spacing(3),
         },
+    },
+    wDevMsg: {
+        fontWeight: '300',
+        fontSize: '1.5em',
+        fontStyle: 'italic'
     }
 }));
 
@@ -76,6 +81,9 @@ function WelcomeComponent(){
                         </Typography>
                         <Typography paragraph className={classes.wText}>
                             {welcomeText1}
+                        </Typography>
+                        <Typography paragraph className={classes.wDevMsg}>
+                            (Site en cours de développement ...)
                         </Typography>
                     </Container>
                 </Grid>
