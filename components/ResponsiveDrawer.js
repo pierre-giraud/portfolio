@@ -193,7 +193,7 @@ function ResponsiveDrawer({selectedItem}) {
                     </Hidden>
 
                     <Hidden mdUp implementation={"css"}>
-                        <IconButton href={"#"}>
+                        <IconButton href={"../CV-Pierre-Giraud.pdf"} target={"_blank"}>
                             <AttachFileIcon style={{color: "white"}}/>
                         </IconButton>
                         <IconButton href={"http://github.com/Pierre-Giraud"} target={"_blank"}>
