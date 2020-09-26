@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         padding: theme.spacing(3,2),
         marginTop: "auto"
+    },
+    footerDiv: {
+        textAlign: "center"
     }
 }));
 
@@ -50,9 +53,12 @@ function Footer(){
 
     return (
         <Paper className={classes.footer} component={'footer'} elevation={10} square>
-            <div>
+            <div className={classes.footerDiv}>
                 <Typography variant="body1" component="p">
                     2020 - Pierre Giraud - giraudp1997@gmail.com
+                </Typography>
+                <Typography variant="body1" component="p">
+                    Version 1
                 </Typography>
             </div>
         </Paper>
