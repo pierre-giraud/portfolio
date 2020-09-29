@@ -21,6 +21,9 @@ export const otherProjectsIntro = "Cette rubrique contient des projets annexes a
     " années d'études et comportants des aspects intéressants.";
 
 
+export const projectPortfolioV2Description = "Deuxième version de mon portfolio, je souhaitais un portfolio plus personnel," +
+    " avec un design beaucoup plus travaillé et qui me correspond plus.";
+
 export const projectPortfolioDescription = "Vous vous y trouvez actuellement : une première version de mon portfolio" +
     " me permettant de mettre en avant mes projets réalisés. Je souhaitait un site simple, clair, possédant plusieurs pages" +
     " et avec l'objectif d'utiliser React, un des frameworks JavaScript les plus utilisés sur le marché.";

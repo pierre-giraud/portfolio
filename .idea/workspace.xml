@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0bf452f1-7e24-4057-987a-6324ec2d706a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projets_web.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projets_web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/string.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/string.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,13 +46,13 @@
     <property name="ts.external.directory.path" value="D:\dvpt\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\dvpt\Projets_Persos\mon-portfolio\pages" />
-      <recent name="D:\dvpt\Projets_Persos\mon-portfolio" />
-      <recent name="D:\dvpt\Projets_Persos\mon-portfolio\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dvpt\Projets_Persos\mon-portfolio\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dvpt\Projets_Persos\mon-portfolio\public" />
+      <recent name="D:\dvpt\Projets_Persos\mon-portfolio\pages" />
+      <recent name="D:\dvpt\Projets_Persos\mon-portfolio" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -89,7 +90,11 @@
       <workItem from="1600926123551" duration="1109000" />
       <workItem from="1601054781320" duration="255000" />
       <workItem from="1601125933499" duration="1964000" />
-      <workItem from="1601159901323" duration="250000" />
+      <workItem from="1601159901323" duration="435000" />
+      <workItem from="1601167929553" duration="8671000" />
+      <workItem from="1601215430577" duration="7163000" />
+      <workItem from="1601323540291" duration="793000" />
+      <workItem from="1601404968581" duration="414000" />
     </task>
     <servers />
   </component>
@@ -101,10 +106,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1599145224741" />
-    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1599793397277">
+    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1601323557854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="262" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1599793397277" />
+    <state x="739" y="262" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601323557854" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1600309490875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

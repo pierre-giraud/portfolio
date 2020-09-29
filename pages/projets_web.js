@@ -8,7 +8,7 @@ import Project from "../components/projects/Project";
 import {
     projectClicetcopieDescription,
     projectOthelloDescription,
-    projectPortfolioDescription,
+    projectPortfolioDescription, projectPortfolioV2Description,
     projectQuizDescription
 } from "../utils/string";
 import Chip from "@material-ui/core/Chip";
@@ -52,6 +52,21 @@ export default function Web(){
                     <LanguageIcon className={classes.icon}/>
                     <Typography variant={"h1"}>Projets WEB</Typography>
                 </div>
+
+                <Project
+                    name={"Mon Portfolio - Version 2"}
+                    subheader={"Septembre 2020"}
+                    image={"../portfoliov2-img.jpg"}
+                    imageSubtitle={"Accueil du portfolio"}>
+                    <ProjectDescription>{projectPortfolioV2Description}</ProjectDescription>
+                    <ProjectDetails context={"Personnel"} team={1} sources={"http://github.com/Pierre-Giraud/portfolio-v2"}/>
+                    <ProjectTools>
+                        <Chip className={classes.tools} color="primary" label={"React JS"} avatar={<Avatar className={classes.avatar} src="../react-icon.svg" />} />
+                        <Chip className={classes.tools} color="primary" label={"Next JS"} avatar={<Avatar className={classes.avatar} src="../nextjs-logo.png" />} />
+                        <Chip className={classes.tools} color="primary" label={"Material UI"} avatar={<Avatar className={classes.avatar} src="../material-ui-logo.png" />} />
+                        <Chip className={classes.tools} color="primary" label={"Netlify"} avatar={<Avatar className={classes.avatar} src="../netlify-logo.png" />} />
+                    </ProjectTools>
+                </Project>
 
                 <Project
                     name={"Mon Portfolio"}
